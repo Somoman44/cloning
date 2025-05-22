@@ -1,0 +1,158 @@
+*{
+    transition: ease 0.2s;
+}
+html{
+    background-color: #FEF8E8;
+}
+.logo{
+    font-family: Raleway;
+    font-weight: bold;
+    font-size:20pt;
+    color:#360F3C;
+}
+.logo > h1{
+    margin-top:10px;
+}
+span{
+    font-size: 60pt;
+}
+.head{
+    display:flex;
+    justify-content: space-between;
+}
+.navigate{
+    width:42%;
+    margin-right: 50px;
+    
+}
+.navigate>ul{
+    display:flex;
+    list-style:none;
+    justify-content: space-around;
+    width:100%;
+    padding:0;
+    align-items: center;
+    background-color: #EEE8D8;
+    height: 60px;
+    border-radius:30px;
+    flex-shrink:5;
+}
+.tab{
+    background-color: #EEE8D8;
+    height: 46px;
+    border-radius:23px;
+    font-family:Raleway;
+    font-weight:bold;
+    width:100%;
+    border-style: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.tab:hover{
+    background-color:white;
+    color:#D152C4;
+}
+.signup{
+    margin-top:20px;
+}
+.signup > button{
+    background-color:#FEF8E8;
+    height:40px;
+    border-radius :20px;
+    width:100px;
+    border-color: #D152C4;
+    border-width:2px;
+    color:#D152C4;
+    font-family: Raleway;
+    font-weight: bold;
+    border-style:solid;
+}
+.signup > button:hover{
+    background-color: #D152C4;
+    color:#FEF8E8;
+    border-color:#D152C4;
+    border-style: solid;
+}
+.signup > button:focus{
+    background-color: #82086f;
+    color:#FEF8E8;
+    border-color:#82086f;
+}
+.content{
+    width:50%;
+    font-family: Raleway;
+}
+.content>h2{
+    font-size: 45pt;
+    color:#D152C4;
+    margin-bottom: 0;
+}
+.content>p{
+    font-size:12pt;
+    color:#909090;
+    line-height:20px;
+}
+.content>button{
+    height:40px;
+    width:150px;
+    border-radius: 20px;
+    background-color:#D152C4;
+    color:white;
+    border:none;
+    font-family: Raleway;
+    font-weight: bold;
+    width:180px;
+}
+.content button:hover{
+    background-color: #FEF8E8;
+    color:#D152C4;
+    border-color:#D152C4;
+    border-style: solid;
+}
+.content button:focus{
+    background-color: #82086f;
+    color:#FEF8E8;
+    border-color:#82086f;
+}
+@media (max-width: 980px){
+    .logo{
+        font-size:30pt;
+    }
+    .logo > h1{
+        margin-bottom:10px;
+    }
+    span{
+        font-size:70pt;
+    }
+    .navigate>ul{
+        flex-direction:column;
+        height:auto;
+    }
+    .navigate>ul>li{
+        margin:0;
+        width:100%;
+
+    }
+    .navigate{
+        margin:0;
+        width:80%;
+        grid-area:1/2/3/3;
+        margin-left:10%;
+    }
+    .content{
+        width:100%;
+    }
+    .head{
+        display:grid;
+        grid-template:1fr 1fr/1fr 1fr;
+    }
+    .signup{
+        display:flex;
+        justify-content: center;
+        margin:0;
+    }
+    h2{
+        margin-top:20px;
+    }
+
+}
